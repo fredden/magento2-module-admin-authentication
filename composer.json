@@ -1,0 +1,57 @@
+{
+    "name": "fredden/magento2-module-admin-authentication",
+    "description": "A Magento 2 module that allows access to Magento admin via Fredden Auth Portal",
+    "license": "CC-BY-NC-SA-4.0",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Dan Wallis",
+            "email": "dan@wallis.nz"
+        }
+    ],
+    "homepage": "https://github.com/fredden/magento2-module-admin-authentication",
+    "require": {
+        "php": "~8.2.0 || ~8.3.0",
+        "ext-json": "*",
+        "ext-random": "*",
+        "firebase/php-jwt": "^5.5 || ^6.0",
+        "magento/framework": "^102.0 || ^103.0",
+        "magento/module-backend": "^101.0 || ^102.0",
+        "magento/module-captcha": "^100.0.2",
+        "magento/module-config": "^101.0",
+        "magento/module-two-factor-auth": "^1.0",
+        "magento/module-user": "^101.0"
+    },
+    "require-dev": {
+        "bitexpert/phpstan-magento": "^0.11.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "maglnet/composer-require-checker": "^3.8",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.9"
+    },
+    "repositories": {
+        "magento": {
+            "type": "composer",
+            "url": "https://repo-magento-mirror.fooman.co.nz/"
+        }
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Fredden\\AdminAuth\\": "src"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "magento/composer-dependency-version-audit-plugin": false,
+            "magento/magento-composer-installer": false,
+            "phpstan/extension-installer": true
+        }
+    }
+}

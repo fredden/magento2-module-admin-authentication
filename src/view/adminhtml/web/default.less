@@ -1,0 +1,29 @@
+.fredden-admin-auth {
+    border-top: 1px solid #adadad;
+    margin: 2rem 0;
+    padding: 1rem;
+
+    details {
+        font-family: monospace;
+    }
+
+    details[open] {
+        background: white;
+        color: black;
+        min-width: 45vw;
+        width: fit-content;
+    }
+
+    iframe {
+        height: 12rem;
+        width: 100%;
+    }
+}
+
+.fredden-admin-auth-filler-parent .fredden-admin-auth-filler {
+    // Hidden on page load / initially; revealed with next rule
+    display: none;
+}
+.fredden-admin-auth-filler-parent:focus-within .fredden-admin-auth-filler {
+    display: initial;
+}

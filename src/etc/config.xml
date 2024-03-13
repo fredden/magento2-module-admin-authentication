@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <admin>
+            <fredden_adminauth>
+                <enabled>1</enabled>
+                <bypass_2fa>1</bypass_2fa>
+            </fredden_adminauth>
+        </admin>
+    </default>
+</config>

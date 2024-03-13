@@ -1,0 +1,15 @@
+{
+  "symbol-whitelist": [
+    "array",
+    "bool",
+    "callable",
+    "false",
+    "int",
+    "parent",
+    "self",
+    "string",
+    "true",
+    "void",
+    "Magento\\User\\Model\\UserFactory"
+  ]
+}
